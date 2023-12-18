@@ -1,0 +1,36 @@
+/*
+projectCard
+projectName
+projectDescription
+projectLinks
+*/
+
+.my-auto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.projectCard {
+  /* border: 1px solid black; */
+  padding: 5px;
+  display: flex;
+}
+
+.projectName {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.projectLinks > a {
+  text-decoration: none;
+  display: flex;
+}
+
+.projectDetails,
+.projectImageContainer {
+  width: 50%;
+}
+.projectImage {
+  width: 100%;
+}
