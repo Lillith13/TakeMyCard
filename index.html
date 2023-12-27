@@ -9,7 +9,7 @@
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Nina - Portfolio</title>
+    <title>Portfolio</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -44,7 +44,7 @@
       id="sideNav"
     >
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Start Bootstrap</span>
+        <span class="d-block d-lg-none"></span>
         <span class="d-none d-lg-block">
           <!-- ! Change profile pic  -->
           <!-- <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt=""> -->
@@ -65,7 +65,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about">About Me</a>
           </li>
           <li class="nav-item">
             <a href="#portfolio" class="nav-link js-scroll-trigger">Projects</a>
@@ -83,7 +83,11 @@
             <span class="text-primary">Bell</span>
           </h1>
 
-
+          <p>
+            Aspiring software engineer with skills in Javascript, Python, CSS, HTML5, React, Redux, Node.js, Express.js, SQL, SQLite3, PostgreSQL, Git, and AWS, gained through rigorous training at App Academy.
+            Leveraging customer service and sales experience, I bring a unique blend of skills, including training and mentoring. Excited to transition into software development, I am seeking opportunities to contribute
+            my diverse skill set and passion for innovation to a dynamic team.
+          </p>
 
           <ul class="list-inline list-social-icons mb-0">
             <li class="list-inline-item">
@@ -99,31 +103,61 @@
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="portfolio">
-        <div class="my-auto">
+        <div class="my-auto" id="projectNameLinks">
           <!--  -->
-          <a href="#airburbs" class="projectName nav-link js-scroll-trigger"
+          <a
+            href="#airburbs"
+            id="airburbsProjectLink"
+            class="projectName nav-link js-scroll-trigger"
             >AirBurbs</a
           >
-          <a href="#sketchy" class="projectName nav-link js-scroll-trigger"
+          <a
+            href="#sketchy"
+            id="sketchyProjectLink"
+            class="projectName nav-link js-scroll-trigger"
             >Sketchy</a
           >
-          <a href="#cannacafe" class="projectName nav-link js-scroll-trigger"
+          <a
+            href="#cannacafe"
+            id="cannaCafeProjectLink"
+            class="projectName nav-link js-scroll-trigger"
             >CannaCafe</a
           >
         </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="airburbs">
-        <div class="my-auto">
+        <div class="my-auto" id="airburbsProjectCard">
           <div class="projectCard">
             <div class="projectDetails">
-              <p class="projectName">AirBurbs</p>
-              <p class="projectDescription">- fullstack AirBnB clone</p>
-              <div class="projectLinks">
-                <a href="https://airburbs.onrender.com">Live Site</a>
-                <a href="https://github.com/Lillith13/API-Project"
-                  >Github Repository</a
-                >
+              <p class="projectName">
+                AirBurbs
+                <img
+                  class="projectCuteIcon"
+                  id="airburbs"
+                  src="img/Bird-House-Silhouette.svg"
+                />
+              </p>
+              <div class="projectInsights">
+                <p class="insightsTitle">Fullstack AirBnB clone</p>
+                <p>
+                  * Developed a robust RESTful API using Express.js to replicate
+                  the backend functionality of the Airbnb website.
+                </p>
+                <p>
+                  * Implemented server-side pagination and filtering to optimize
+                  the retrieval of property listings, enhancing application
+                  performance.
+                </p>
+                <p>
+                  * Implemented state management with Redux to efficiently
+                  handle global application state, ensuring a smooth and
+                  interactive user experience.
+                </p>
+                <p>
+                  * Employed css and React-bootstrap for styling components and
+                  achieving a cohesive design language.
+                </p>
               </div>
             </div>
 
@@ -136,39 +170,47 @@
             </div>
           </div>
 
-          <div>
-            <p>
-              * Developed a robust RESTful API using Express.js to replicate the
-              backend functionality of the Airbnb website.
-            </p>
-            <p>
-              * Implemented server-side pagination and filtering to optimize the
-              retrieval of property listings, enhancing application performance.
-            </p>
-            <p>
-              * Implemented state management with Redux to efficiently handle
-              global application state, ensuring a smooth and interactive user
-              experience.
-            </p>
-            <p>
-              * Employed css and React-bootstrap for styling components and
-              achieving a cohesive design language.
-            </p>
+          <div class="projectLinks">
+            <a href="https://airburbs.onrender.com">Live Site</a>
+            <a href="https://github.com/Lillith13/API-Project"
+              >Github Repository</a
+            >
           </div>
         </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="sketchy">
-        <div class="my-auto">
+        <div class="my-auto" id="sketchyProjectCard">
           <div class="projectCard">
             <div class="projectDetails">
-              <p class="projectName">Sketchy</p>
-              <p class="projectDescription">- fullstack Etsy clone</p>
-              <div class="projectLinks">
-                <a href="https://sketchy-v2.onrender.com/">Live Site</a>
-                <a href="https://github.com/Gazdalman/Sketchy-Etsy-clone"
-                  >Github Repository</a
-                >
+              <p class="projectName">
+                Sketchy
+                <img
+                  class="projectCuteIcon"
+                  id="sketchy"
+                  src="img/pngaaa.com-2485362.png"
+                />
+              </p>
+
+              <div class="projectInsights">
+                <p class="insightsTitle">Fullstack Etsy clone</p>
+                <p>
+                  * Utilized Flask-RESTful for creating resource-based
+                  endpoints, enhancing API design and maintainability.
+                </p>
+                <p>
+                  * Created custom API endpoints to handle product searching,
+                  filtering, and sorting, providing a user-friendly experience
+                  similar to Etsy.
+                </p>
+                <p>
+                  * Developed a responsive and visually appealing user interface
+                  using React, closely resembling the design and layout of Etsy.
+                </p>
+                <p>
+                  * Integrated a shopping cart feature using React context or
+                  Redux, allowing users to add and manage items before checkout.
+                </p>
               </div>
             </div>
 
@@ -181,69 +223,147 @@
             </div>
           </div>
 
-          <div>
-            <p>
-              * Utilized Flask-RESTful for creating resource-based endpoints,
-              enhancing API design and maintainability.
-            </p>
-            <p>
-              * Created custom API endpoints to handle product searching,
-              filtering, and sorting, providing a user-friendly experience
-              similar to Etsy.
-            </p>
-            <p>
-              * Developed a responsive and visually appealing user interface
-              using React, closely resembling the design and layout of Etsy.
-            </p>
-            <p>
-              * Integrated a shopping cart feature using React context or Redux,
-              allowing users to add and manage items before checkout.
-            </p>
+          <div class="projectLinks">
+            <a href="https://sketchy-v2.onrender.com/">Live Site</a>
+            <a href="https://github.com/Gazdalman/Sketchy-Etsy-clone"
+              >Github Repository</a
+            >
           </div>
         </div>
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="cannacafe">
-        <div class="my-auto">
+        <div class="my-auto" id="cannaCafeProjectCard">
           <div class="projectCard">
             <div class="projectDetails">
-              <p class="projectName">CannaCafe</p>
-              <p class="projectDescription">- fullstack creation</p>
-              <div class="projectLinks">
-                <a href="https://cannacafe.onrender.com">Live Site</a>
-                <a href="https://github.com/Lillith13/CannaCafe"
-                  >Github Repository</a
-                >
+              <p class="projectName">
+                CannaCafe
+                <img
+                  class="projectCuteIcon"
+                  id="cannaCafe"
+                  src="img/cannaCafe-favicon.ico"
+                  alt="CannaCafeFavicon"
+                />
+              </p>
+
+              <div class="projectInsights">
+                <p class="insightsTitle">Fullstack creation</p>
+                <p>
+                  * Integrated Flask-SQLAlchemy for efficient database
+                  management, ensuring seamless CRUD operations.
+                </p>
+                <p>
+                  * Created custom API endpoints for product/menu item listings,
+                  cart management, and order processing, delivering a seamless
+                  user experience.
+                </p>
+                <p>
+                  * Utilized React Router for dynamic client-side routing,
+                  providing a seamless single-page application experience.
+                </p>
+                <p>
+                  * Developed a user-friendly shopping cart and checkout
+                  process, allowing users to easily add items and complete
+                  transactions.
+                </p>
               </div>
             </div>
 
             <div class="projectImageContainer">
               <img
-                src="./img/CC-Home.png"
-                alt="CannaCafeHome"
+                alt="CannaCafeSplashGuest"
+                class="projectImage"
+                src="https://github.com/Lillith13/CannaCafe/blob/main/assets/SplashPage/LoggedOut.png?raw=true"
+              />
+              <img
+                src="https://github.com/Lillith13/CannaCafe/blob/main/assets/SplashPage/LoggedIn.png?raw=true"
+                alt="CannaCafeSplashUser"
                 class="projectImage"
               />
+              <img
+                src="https://github.com/Lillith13/CannaCafe/blob/main/assets/HomePage/LoggedOut.png?raw=true"
+                alt="CannaCafeHomeGuest"
+                class="projectImage"
+              />
+              <img
+                src="https://github.com/Lillith13/CannaCafe/blob/main/assets/HomePage/Member-Employee.png?raw=true"
+                alt="CannaCafeHomeUserAndEmployee"
+                class="projectImage"
+              />
+              <img
+                src="https://github.com/Lillith13/CannaCafe/blob/main/assets/HomePage/Management.png?raw=true"
+                alt="CannaCafeHomeManagement"
+                class="projectImage"
+              />
+              <img
+                src="https://github.com/Lillith13/CannaCafe/blob/main/assets/UserProfile/Member.png?raw=true"
+                alt="CannaCafeProfileMember"
+                class="projectImage"
+              />
+              <img
+                src="https://github.com/Lillith13/CannaCafe/blob/main/assets/UserProfile/Employee.png?raw=true"
+                alt="CannaCafeProfileEmployee"
+                class="projectImage"
+              />
+              <img
+                src="https://github.com/Lillith13/CannaCafe/blob/main/assets/UserProfile/Management.png?raw=true"
+                alt="CannaCafeProfileManagement"
+                class="projectImage"
+              />
+              <img
+                src="https://github.com/Lillith13/CannaCafe/blob/main/assets/UserProfile/PastOrders.png?raw=true"
+                alt="CannaCafePastOrders"
+                class="projectImage"
+              />
+              <img
+                src="https://github.com/Lillith13/CannaCafe/blob/main/assets/UserProfile/UserReviews-AsViewedBy,Member.png?raw=true"
+                alt="CannaCafeReviews"
+                class="projectImage"
+              />
+              <img
+                src="https://github.com/Lillith13/CannaCafe/blob/main/assets/UserProfile/Wishlist.png?raw=true"
+                alt="CannaCafeWishlist"
+                class="projectImage"
+              />
+              <img
+                src="https://github.com/Lillith13/CannaCafe/blob/main/assets/UserProfile/Favorites.png?raw=true"
+                alt="CannaCafeFavorites"
+                class="projectImage"
+              />
+              <img
+                src="https://github.com/Lillith13/CannaCafe/blob/main/assets/ProductsPage/Member-Employee_View.png?raw=true"
+                alt="CannaCafeProducts"
+                class="projectImage"
+              />
+              <img
+                src="https://github.com/Lillith13/CannaCafe/blob/main/assets/ProductsPage/Management_View.png?raw=true"
+                alt="CannaCafeMenu"
+                class="projectImage"
+              />
+              <img
+                src="https://github.com/Lillith13/CannaCafe/blob/main/assets/Cart-TakeoutBag.png?raw=true"
+                alt="CannaCafeTakeout"
+                class="projectImage"
+              />
+              <div class="imageContainerLinks" id="cannaCafe">
+                <a
+                  href="https://github.com/Lillith13/CannaCafe/tree/main/assets"
+                  target="_blank"
+                  >See more here...</a
+                >
+                <a
+                  href="https://github.com/Lillith13/CannaCafe/wiki"
+                  target="_blank"
+                  >Checkout Project Wiki</a
+                >
+              </div>
             </div>
           </div>
-
-          <div>
-            <p>
-              * Integrated Flask-SQLAlchemy for efficient database management,
-              ensuring seamless CRUD operations.
-            </p>
-            <p>
-              * Created custom API endpoints for product/menu item listings,
-              cart management, and order processing, delivering a seamless user
-              experience.
-            </p>
-            <p>
-              * Utilized React Router for dynamic client-side routing, providing
-              a seamless single-page application experience.
-            </p>
-            <p>
-              * Developed a user-friendly shopping cart and checkout process,
-              allowing users to easily add items and complete transactions.
-            </p>
+          <div class="projectLinks">
+            <a href="https://cannacafe.onrender.com">Live Site</a>
+            <a href="https://github.com/Lillith13/CannaCafe"
+              >Github Repository</a
+            >
           </div>
         </div>
       </section>
