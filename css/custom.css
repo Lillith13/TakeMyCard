@@ -12,25 +12,120 @@ projectLinks
 }
 
 .projectCard {
-  /* border: 1px solid black; */
   padding: 5px;
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .projectName {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 30px;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15%;
+  margin-top: 3%;
 }
 
 .projectLinks > a {
   text-decoration: none;
   display: flex;
 }
-
+.projectDetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+}
 .projectDetails,
 .projectImageContainer {
-  width: 50%;
+  width: 47%;
+}
+.projectImageContainer {
+  height: 93%;
 }
 .projectImage {
   width: 100%;
+}
+
+.projectInsights {
+  overflow-x: scroll;
+  padding: 15px;
+  font-size: 20px;
+  height: 70%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (max-height: 700px) {
+  .projectCard {
+    height: 200px;
+  }
+}
+@media screen and (max-height: 849px) {
+  .projectCard {
+    height: 450px;
+  }
+}
+@media screen and (min-height: 850px) {
+  .projectCard {
+    height: 700px;
+  }
+}
+
+/* css for stuff I added lol */
+#extraInfo {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#personalTxt {
+  word-wrap: break-word;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#gif {
+  max-height: 150px;
+}
+
+#contactMe {
+  width: 50%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+#contactMethodsDiv {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contactLinks {
+  width: 30%;
+}
+#email.contactFormIcon {
+  width: 45px;
+  transition: 1.5s;
+}
+#email.contactFormIcon:hover {
+  rotate: 360deg;
+}
+#phone.contactFormIcon {
+  width: 37px;
+  rotate: -25deg;
+  transform: scale(-1);
+  transition: 1.5s;
+}
+#phone.contactFormIcon:hover {
+  rotate: 70deg;
+}
+
+#cannaCafeWarningLable {
+  font-size: 12px;
 }
