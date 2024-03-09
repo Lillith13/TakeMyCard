@@ -120,7 +120,7 @@ projectLinks
   width: 37px;
   rotate: -25deg;
   transform: scale(-1);
-  transition: 1.5s;
+  transition: 1s;
 }
 #phone.contactFormIcon:hover {
   rotate: 70deg;
